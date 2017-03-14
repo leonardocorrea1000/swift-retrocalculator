@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					E8A9766A1E78AE9000474021 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = QQF29QVF67;
+						DevelopmentTeam = 2PTQ78DPPH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QQF29QVF67;
+				DEVELOPMENT_TEAM = 2PTQ78DPPH;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.RetroCalculator;
@@ -274,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QQF29QVF67;
+				DEVELOPMENT_TEAM = 2PTQ78DPPH;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.RetroCalculator;
@@ -302,6 +302,7 @@
 				E8A9767F1E78AE9000474021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
