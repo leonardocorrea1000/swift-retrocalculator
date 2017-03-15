@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -253,12 +253,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4J8-2p-KPV">
+                                <rect key="frame" x="126" y="558.5" width="123" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="Vup-xa-f9w"/>
+                                    <constraint firstAttribute="height" constant="42" id="i2Z-e3-UjB"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ke-cs-nAD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4J8-2p-KPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3eE-Md-2Am"/>
                             <constraint firstItem="ZXA-C3-f1L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7E8-y7-rw1"/>
                             <constraint firstItem="8V8-BC-far" firstAttribute="leading" secondItem="9mo-8s-VZm" secondAttribute="leading" constant="15" id="83A-SN-alM"/>
                             <constraint firstItem="SAK-RN-KGO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="85c-Lt-do2"/>
+                            <constraint firstItem="4J8-2p-KPV" firstAttribute="top" secondItem="SAK-RN-KGO" secondAttribute="bottom" constant="8" id="FJZ-nG-VIx"/>
                             <constraint firstItem="SAK-RN-KGO" firstAttribute="top" secondItem="9mo-8s-VZm" secondAttribute="bottom" constant="14" id="ILl-G9-Nd1"/>
                             <constraint firstItem="9mo-8s-VZm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INi-0F-cfy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WVX-hj-IOJ" secondAttribute="bottom" id="R8Z-sK-C6T"/>
@@ -280,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.375" y="122.5"/>
+            <point key="canvasLocation" x="112.8" y="121.88905547226388"/>
         </scene>
     </scenes>
     <resources>
@@ -296,6 +309,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
