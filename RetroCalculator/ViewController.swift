@@ -43,6 +43,9 @@ class ViewController: UIViewController {
             print(err.debugDescription);
         }
         
+        outputLbl.text = "0";
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +55,9 @@ class ViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound();
+        
+        runningNumber += "\(sender.tag)"
+        outputLbl.text = runningNumber
     }
     
     func playSound() {
@@ -82,6 +88,18 @@ class ViewController: UIViewController {
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
     }
+    
+    @IBAction func onClearPressed(_ sender: Any) {
+        playSound();
+        outputLbl.text = "0";
+        currentOperation = Operation.Empty
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        
+    }
+    
     
     func processOperation(operation: Operation) {
         playSound()
